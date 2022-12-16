@@ -3,7 +3,7 @@ const router = express.Router()
 
 // маршруты api
 router.use("/territory", require("./tmusl"));
-
+router.use("/federal", require("./federal"))
 router.get("/health", async (req, res) =>
   res.status(200).json({ success: true, msg: "Сервис работает стабильно" })
 );
